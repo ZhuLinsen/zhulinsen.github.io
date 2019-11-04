@@ -105,25 +105,23 @@
 
 
 
-  <meta name="description" content="目标：爬取知乎所有用户的个人信息，例如name、id、school等 思路：先确定一个大V，获取他的关注列表和粉丝列表，再获取 粉丝和关注用户 的 关注者和粉丝 的关注和粉丝列表，以此循环调用，可以获得几乎全站用户，再各自获取其个人信息，存储到数据库时加一个去重判断即可。 遇到的问题：在爬取到三千多个用户信息的时候，出现了403，然后ip被封，获取的代理池也不好用，躲不过知乎的反爬虫，所以先这样吧">
-<meta name="keywords" content="爬虫,python,Scrapy">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Scrapy 爬取知乎全站用户信息">
-<meta property="og:url" content="http://yoursite.com/2019/02/15/Scrapy-爬取知乎/index.html">
+  <meta name="description" content="少壮不努力，老大徒伤悲">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mumu&#39; Blogs">
+<meta property="og:url" content="http://yoursite.com/archives/2019/11/index.html">
 <meta property="og:site_name" content="Mumu&#39; Blogs">
-<meta property="og:description" content="目标：爬取知乎所有用户的个人信息，例如name、id、school等 思路：先确定一个大V，获取他的关注列表和粉丝列表，再获取 粉丝和关注用户 的 关注者和粉丝 的关注和粉丝列表，以此循环调用，可以获得几乎全站用户，再各自获取其个人信息，存储到数据库时加一个去重判断即可。 遇到的问题：在爬取到三千多个用户信息的时候，出现了403，然后ip被封，获取的代理池也不好用，躲不过知乎的反爬虫，所以先这样吧">
+<meta property="og:description" content="少壮不努力，老大徒伤悲">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-17T09:37:03.877Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Scrapy 爬取知乎全站用户信息">
-<meta name="twitter:description" content="目标：爬取知乎所有用户的个人信息，例如name、id、school等 思路：先确定一个大V，获取他的关注列表和粉丝列表，再获取 粉丝和关注用户 的 关注者和粉丝 的关注和粉丝列表，以此循环调用，可以获得几乎全站用户，再各自获取其个人信息，存储到数据库时加一个去重判断即可。 遇到的问题：在爬取到三千多个用户信息的时候，出现了403，然后ip被封，获取的代理池也不好用，躲不过知乎的反爬虫，所以先这样吧">
+<meta name="twitter:title" content="Mumu&#39; Blogs">
+<meta name="twitter:description" content="少壮不努力，老大徒伤悲">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/02/15/Scrapy-爬取知乎/">
+  <link rel="canonical" href="http://yoursite.com/archives/2019/11/">
 
 
 
@@ -133,7 +131,7 @@
   };
 </script>
 
-  <title>Scrapy 爬取知乎全站用户信息 | Mumu' Blogs</title>
+  <title>归档 | Mumu' Blogs</title>
   
 
 
@@ -191,7 +189,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left page-archive">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -284,7 +282,7 @@
         
         
           
-          <li class="menu-item menu-item-archives">
+          <li class="menu-item menu-item-archives menu-item-active">
 
     
     
@@ -331,6 +329,28 @@
   
     
 
+    
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
+
   
 
   
@@ -376,272 +396,78 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block archive">
+    <div id="posts" class="posts-collapse">
+      <span class="archive-move-on"></span>
 
-  
+      
+      <span class="archive-page-counter">
+        
+        
+        
+          
+        
+        嗯..! 目前共计 8 篇日志。 继续努力。
+      </span>
+      
 
-  
-  
-  
+      
 
-  
-    <div class="reading-progress-bar"></div>
-  
+        
+        
+        
+
+        
+          
+          <div class="collection-title">
+            <h1 class="archive-year" id="archive-year-2019">2019</h1>
+          </div>
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/15/Scrapy-爬取知乎/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="mumu">
-      <meta itemprop="description" content="少壮不努力，老大徒伤悲">
-      <meta itemprop="image" content="/images/cat.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mumu' Blogs">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
+          <a class="post-title-link" href="/2019/11/04/毕业杂谈/" itemprop="url">
+            
+              <span itemprop="name">'毕业杂谈'</span>
+            
+          </a>
         
-          <h1 class="post-title" itemprop="name headline">Scrapy 爬取知乎全站用户信息
+      </h2>
 
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-02-15 12:48:03" itemprop="dateCreated datePublished" datetime="2019-02-15T12:48:03+08:00">2019-02-15</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-02-17 17:37:03" itemprop="dateModified" datetime="2019-02-17T17:37:03+08:00">2019-02-17</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/爬虫/" itemprop="url" rel="index"><span itemprop="name">爬虫</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/02/15/Scrapy-爬取知乎/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/15/Scrapy-爬取知乎/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-            <span class="post-meta-divider">|</span>
-            <span class="post-meta-item-icon">
-            <i class="fa fa-eye"></i>
-             阅读次数： 
-            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
-            </span>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p><strong><em>目标</em></strong>：爬取知乎所有用户的个人信息，例如name、id、school等</p>
-<p><strong><em>思路</em></strong>：先确定一个大V，获取他的关注列表和粉丝列表，再获取 <strong>粉丝和关注用户</strong> 的 <strong>关注者和粉丝</strong> 的关注和粉丝列表，以此循环调用，可以获得几乎全站用户，再各自获取其个人信息，存储到数据库时加一个去重判断即可。</p>
-<p><strong><em>遇到的问题</em></strong>：在爬取到三千多个用户信息的时候，出现了403，然后ip被封，获取的代理池也不好用，躲不过知乎的反爬虫，所以先这样吧</p>
-<p><strong><em>优化</em></strong>：发起请求时可以再加个判断，如果没有粉丝或者没有关注者的，对应就不再发起请求</p>
-<p><strong><em>参考</em></strong>：静觅大佬的教学视频</p>
-<p><strong><em>代码</em></strong>：<a href="https://github.com/ZhuLinsen/Scrapy/tree/master/zhihuuser" target="_blank" rel="noopener">https://github.com/ZhuLinsen/Scrapy/tree/master/zhihuuser</a></p>
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-      <div>
-        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-  <div>你的赞赏，是我的动力</div>
-  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById(&quot;QR&quot;); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
-    <span>打赏</span>
-  </button>
-  <div id="QR" style="display: none;">
-
-    
-      <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/images/wechatpay.png" alt="mumu 微信支付">
-        <p>微信支付</p>
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-11-04T22:17:05+08:00" content="2019-11-04">
+          11-04
+        </time>
       </div>
-    
 
-    
-      <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="/images/alipay.jpg" alt="mumu 支付宝">
-        <p>支付宝</p>
-      </div>
-    
-
-    
-
-  </div>
-</div>
-
-      </div>
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/爬虫/" rel="tag"># 爬虫</a>
-          
-            <a href="/tags/python/" rel="tag"># python</a>
-          
-            <a href="/tags/Scrapy/" rel="tag"># Scrapy</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2019/02/14/hexo-github的一些使用心得/" rel="next" title="hexo+github的一些使用心得">
-                <i class="fa fa-chevron-left"></i> hexo+github的一些使用心得
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/02/16/Scrapy 爬取百度贴吧全站图片/" rel="prev" title="Scrapy 爬取百度贴吧全站图片">
-                Scrapy 爬取百度贴吧全站图片 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
+
+      
+
+    </div>
   </div>
+  
+  
+  
+
+  
+
 
 
           </div>
           
-
-  
-    <div class="comments" id="comments">
-    </div>
-
-  
-
-
 
         </div>
         
@@ -950,10 +776,6 @@
 
 
   
-  <script src="/js/src/scrollspy.js?v=7.0.0"></script>
-<script src="/js/src/post-details.js?v=7.0.0"></script>
-
-
 
   
 
@@ -993,8 +815,6 @@
 
 
 
-
-  
 
 
   
